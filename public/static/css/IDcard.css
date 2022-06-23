@@ -1,0 +1,51 @@
+.photo-registered{
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.username{
+    color: black;
+    font-size: large;
+    display: flex;
+    
+}
+.logo1{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-top: 70px;
+    float: left;
+}
+.idimage{
+display: flex;
+flex-direction: column;
+margin-top: 70px;
+}
+.iddata{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 22px;
+    background-color: #607d8b;
+}
+.data{
+    float: left;
+    margin-top: 10px;
+    
+}
+.CABLE{
+    margin-top: 85px;
+    float: left;
+    font-size: large;
+}
+.menu-item{
+    width: 20px !important;
+
+}
+.qrcode{
+}

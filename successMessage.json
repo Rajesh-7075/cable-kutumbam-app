@@ -1,0 +1,16 @@
+{
+    "SUCCESS_MESSAGE":{
+        "USER_ADDED":"User Added successfully",
+        "USER_LOGGEDIN":"User logged in Successfully",
+        "Appointment_accepted_status":"تم حجز الموعد",
+        "Appointment_rejected_status":"التعيين مرفوض",
+        "Appointment_text":"مرحبا! تم حجز موعدك بنجاح",
+        "Appointment_image":"/logo512.png",
+        "Appointment_badge":"/logo144.png" 
+
+
+    }
+}
+
+
+

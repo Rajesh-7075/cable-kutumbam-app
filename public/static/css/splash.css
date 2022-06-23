@@ -1,0 +1,52 @@
+.splash-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cable{
+     
+    font-size:40px;
+}
+.continue{
+    background-color: rgb(42, 69, 126) !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    height: 52px;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    /* box-shadow: none !important; */
+    margin-top: 20px;
+}
+
+.logo{
+   width: 70%;
+   margin-top: 30px;
+   border-radius: 12px;
+   height: 80%;
+   
+    
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+       
+    width: 327px;
+    height: 130px;
+    position: absolute;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+
+}

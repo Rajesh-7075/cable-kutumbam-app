@@ -1,0 +1,18 @@
+{
+    "ERROR_MESSAGE":{
+        "USER_EXISTS":"This Mobile Number has already been registered",
+        "USER_NOT_ADDED":"User not added",
+        "USER_NOT_FOUND":"User does not exists with given user name",
+        "USER_NOT_FOUND_USERID":"User does not exists with given user id",
+        "USER_NOT_FETCHED":"User not fetched",
+        "USER_NOT_UPDATED":"User details not updated",
+        "USER_NOT_EXISTS":"User not existed with given Mobile Number",
+        "PASSWORD_INCORRECT":"Password is incorrect"
+
+
+
+    }
+}
+
+
+

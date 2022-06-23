@@ -1,0 +1,62 @@
+.splash-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.homepage{
+color: white !important;
+font-size: large;
+display: flex;
+flex-direction: column;
+}
+.registration{
+    background-color: rgb(42, 69, 126) !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    height: 52px;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  border: none;
+  margin-top: -190px !important;
+}
+.Homepage{
+    margin-top: 134px;
+}
+.arrow-image{
+    width: 18px;
+    height: 21px;
+    cursor: pointer;
+
+}
+.registration-button{
+    
+        width: 327px;
+        height: 130px;
+        position: absolute;
+        bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;   
+    box-shadow: none !important;
+}
+.login-button{
+    
+    width: 327px;
+    height: 130px;
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    box-shadow: none !important;
+
+}

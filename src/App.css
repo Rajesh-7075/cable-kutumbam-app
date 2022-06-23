@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.addUser{
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+
+
+ 
+form{
+  display: inline-block;
+} 
+
+.twobuttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: "2.25em";
+  margin-top: "2.25em" 
+
+}
