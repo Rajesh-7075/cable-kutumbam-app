@@ -16,6 +16,12 @@
     margin-top: 9px;
     
 }
+.login-group{
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 30px;
+     
+}
 .submit-button{
     background-color: rgb(42, 69, 126) !important;
     border-radius: 12px !important;
