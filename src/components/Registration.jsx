@@ -298,7 +298,7 @@ function Registration(props) {
                         {state.phoneNumberError}
                     </div> : ""}
                 </div>
-                <div className="group2">
+                <div className="group3">
                     <Input type="checkbox"
                         value={state.mgo}
                         onChange={(event) =>
@@ -316,7 +316,7 @@ function Registration(props) {
                     <Label >    Lco          </Label>{" "}
 
                 </div>
-                <div className="group1">
+                <div className="group4">
 
                     <FormGroup>
                         <Input

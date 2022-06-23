@@ -16,6 +16,18 @@
     margin-top: 9px;
     
 }
+.group3{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 20px;
+    
+}
+.group4{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 5px;
+    
+}
 .login-group{
     display: flex;
     flex-direction: column !important;
