@@ -38,7 +38,8 @@ margin-top: 70px;
     margin-top: 10px;
     color: white !important;
     font: bold !important;
-    
+    font-size: large;
+
 }
 .CABLE{
     margin-top: 85px;
@@ -58,4 +59,7 @@ margin-top: 70px;
 }
 .qrcode{
     margin-top: 10px;
+    margin-bottom: 50px;
+}
+.label-idcard{
 }

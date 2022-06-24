@@ -94,19 +94,13 @@ function IDcard(props) {
                     <FormGroup>
                         {user.length !== 0 ?
                             <div className="qrcode">
-                                <QRCode size="150" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6]} />
+                                <QRCode size="190" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6] +" "+"mgo :"+user[7]+" "+"lco :"+user[8]+" "+"other specify :"+user[9]+" "+"technician/employe trade :"+user[10]+" "+"cable services :"+user[11]+" "+"internet services :"+user[12]+" "+"both cable and internet services :"+user[13]+" "+"others :"+user[14]}  />
 
                             </div>
                             : ""}
                     </FormGroup>
                     <FormGroup>
-                        <div>
-                            <img src="/static/img/logo.jpeg" alt="arrow" className="logo1" />
-
-                            <h5 className="CABLE">CABLE KUTUMBAM</h5>
-
-                        </div>
-
+                    
                     </FormGroup>
 
                 </div>
