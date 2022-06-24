@@ -160,7 +160,7 @@ function Login(props) {
                       event.target.value ?
                         setLoginState({ ...loginState, phoneNumber: event.target.value, phoneNumberError: "" }) : setLoginState({ ...loginState, phoneNumber: event.target.value, phoneNumberError: "Phone Number is required" })
                     }
-                    placeholder="phoneNumber"
+                    placeholder="PHONE NUMBER"
 
                   />
 
@@ -182,7 +182,7 @@ function Login(props) {
                       event.target.value ?
                         setLoginState({ ...loginState, password: event.target.value, passwordError: "" }) : setLoginState({ ...loginState, password: event.target.value, passwordError: "Password is required" })
                     }
-                    placeholder="Password"
+                    placeholder="PASSWORD"
 
                   />
                 </FormGroup>

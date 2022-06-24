@@ -36,6 +36,8 @@ margin-top: 70px;
 .data{
     float: left;
     margin-top: 10px;
+    color: white !important;
+    font: bold !important;
     
 }
 .CABLE{
@@ -47,5 +49,13 @@ margin-top: 70px;
     width: 20px !important;
 
 }
+.label-log{
+    color: white;
+
+}
+.span1{
+    color: white;
+}
 .qrcode{
+    margin-top: 10px;
 }

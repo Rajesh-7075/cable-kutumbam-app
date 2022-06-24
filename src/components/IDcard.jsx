@@ -65,7 +65,7 @@ function IDcard(props) {
             <div className="logout">
                 <a className="menu-item" href="#/"><img src="/static/img/logout.svg" alt="logout" onClick={logout} className="menu-item" /></a>
 
-                <div>
+                <div className="label-log">
                     Logout
 
 </div>
@@ -76,7 +76,7 @@ function IDcard(props) {
                 <span className="span1"> ID CARD
          </span>
                 <div>
-                    <img className="photo-registered" src="static/img/users/user.png" alt="img" />
+                    <img className="photo-registered" src="/static/img/logo.jpeg" alt="logo" />
 
 
                 </div>
@@ -94,7 +94,7 @@ function IDcard(props) {
                     <FormGroup>
                         {user.length !== 0 ?
                             <div className="qrcode">
-                                <QRCode size="200" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6]} />
+                                <QRCode size="150" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6]} />
 
                             </div>
                             : ""}

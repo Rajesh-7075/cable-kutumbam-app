@@ -22,7 +22,6 @@ const initialState = {
     is: false,
     bothcsis: false,
     others: "",
-    profilePic: "",
     userNameError: "",
     nwNameError: "",
     villageError: "",
@@ -116,7 +115,7 @@ function Registration(props) {
     const handlesubmit = () => {
         const isValid = validate();
         if (isValid) {
-            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO", profilepic: "" };
+            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO" };
 
             appendSpreadsheet(newRow);
             addToast("User Registred sucessfully",
@@ -143,12 +142,6 @@ function Registration(props) {
 
 
 
-    const handleprofilePic = (e) => {
-        setState({ ...state, profilePic: e.target.files[0] })
-        let reader = new FileReader();
-
-
-    }
     return (
         <div className="splash-container">
             <div className="registration-main">
@@ -160,7 +153,7 @@ function Registration(props) {
                             type="text"
                             name="userName"
                             value={state.userName}
-                            placeholder="Name"
+                            placeholder="NAME"
                             onChange={(event) =>
                                 event.target.value ?
                                     setState({ ...state, userName: event.target.value, userNameError: "" }) : setState({ ...state, userName: event.target.value, userNameError: "Name is required" })
@@ -178,7 +171,7 @@ function Registration(props) {
                             type="text"
                             name="Name"
                             value={state.nwName}
-                            placeholder="Network Name"
+                            placeholder="NETWORK NAME"
                             onChange={(event) =>
                                 event.target.value ?
                                     setState({ ...state, nwName: event.target.value, nwNameError: "" }) : setState({ ...state, nwName: event.target.value, nwNameError: "N/W Name is required" })
@@ -228,16 +221,15 @@ function Registration(props) {
                 <div className="group">
 
                     <FormGroup>
-                        <Input type="select" name="select"
+                        <Input  className="selectd" type="select" name="select"
                               value={state.district}
-                              placeholder="DISTRICT"
                               onChange={(event) =>
                                   event.target.value ?
                                       setState({ ...state, district: event.target.value, districtError: "" }) : setState({ ...state, district: event.target.value, districtError: "District is required" })
                               }
 
                         >
-                            <option value="">Select District</option>
+                            <option value="" >SELECT DISTRICT</option>
                             <option value="Anakapalli">Anakapalli</option>
                             <option value="Annamayya">Annamayya</option>
                             <option value="Anantapur">Anantapur</option>
@@ -278,7 +270,7 @@ function Registration(props) {
                             type="text"
                             name="email"
                             value={state.email}
-                            placeholder="email"
+                            placeholder="EMAIL"
                             onChange={(event) =>
                                 event.target.value ?
                                     setState({ ...state, email: event.target.value, emailError: "" }) : setState({ ...state, email: event.target.value, emailError: "Email is required" })
@@ -337,7 +329,7 @@ function Registration(props) {
                             type="text"
                             name="ospecify"
                             value={state.ospecify}
-                            placeholder="Other specify"
+                            placeholder="OTHER SPECIFY"
                             onChange={(event) =>
                                 event.target.value ?
                                     setState({ ...state, ospecify: event.target.value }) : setState({ ...state, ospecify: event.target.value })
@@ -402,24 +394,7 @@ function Registration(props) {
                     <Label >  Others         </Label>
 
                 </div>
-                <div className="group5">
-                    <div className="profile">
-                        <Label>Upload ProfilePic :</Label>
-
-                    </div>
-                    <FormGroup>
-                        <Input
-                            type="file"
-                            accept="image/*"
-                            name="image"
-                            onChange={(event) =>
-                                handleprofilePic(event)
-                            }
-                        />
-
-
-                    </FormGroup>
-                </div>
+             
                 <div>
                     <Button className="submit-button" onClick={handlesubmit}>
                         SUBMIT
