@@ -174,7 +174,7 @@ function Registration(props) {
                             placeholder="NETWORK NAME"
                             onChange={(event) =>
                                 event.target.value ?
-                                    setState({ ...state, nwName: event.target.value, nwNameError: "" }) : setState({ ...state, nwName: event.target.value, nwNameError: "N/W Name is required" })
+                                    setState({ ...state, nwName: event.target.value, nwNameError: "" }) : setState({ ...state, nwName: event.target.value, nwNameError: "Network Name is required" })
                             }
                         />
                     </FormGroup>
