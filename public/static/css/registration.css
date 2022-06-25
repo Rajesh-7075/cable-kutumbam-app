@@ -99,3 +99,9 @@ margin-bottom: 30px;
 .selectd{
     font-weight: bold !important;
 }
+
+::placeholder {
+  color: black !important;
+  font-weight:500;
+  opacity: 10 !important;
+}

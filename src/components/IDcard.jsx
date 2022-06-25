@@ -94,7 +94,7 @@ function IDcard(props) {
                     <FormGroup>
                         {user.length !== 0 ?
                             <div className="qrcode">
-                                <QRCode size="190" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6] +" "+"mgo :"+user[7]+" "+"lco :"+user[8]+" "+"other specify :"+user[9]+" "+"technician/employe trade :"+user[10]+" "+"cable services :"+user[11]+" "+"internet services :"+user[12]+" "+"both cable and internet services :"+user[13]+" "+"others :"+user[14]}  />
+                                <QRCode size="190" title="User Deatils" value={"userName: " + user[0] + " " + "Network Name: " + user[1] + " " + "village: " + user[2] + " " + "mandal: " + user[3] + " " + "district: " + user[4] + " " + "email: " + user[5] + " " + " phoneNumber: " + user[6] +" "+"mgo :"+user[7]+" "+"lco :"+user[8]+" "+"other specify :"+user[9]+" "+"technician/employe trade :"+user[10]+" "+"cable services :"+user[11]+" "+"internet services :"+user[12]+" "+"both cable and internet services :"+user[13]+" "+"others :"+user[14]+" "+"createdDate :"+user[15] }  />
 
                             </div>
                             : ""}

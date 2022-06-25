@@ -12,6 +12,7 @@ const initialState = {
     village: "",
     mandal: "",
     district: "",
+    State:"",
     email: "",
     phoneNumber: "",
     mgo: false,
@@ -26,7 +27,7 @@ const initialState = {
     nwNameError: "",
     villageError: "",
     mandalError: "",
-    districtError: "",
+    StateError: "",
     emailError: "",
     phoneNumberError: ""
 
@@ -66,7 +67,7 @@ function Registration(props) {
 
     //Function to validate signup state variables
     const validate = () => {
-        let userNameError, nwNameError, villageError, mandalError, districtError, emailError, phoneNumberError;
+        let userNameError, nwNameError, villageError, mandalError, StateError, emailError, phoneNumberError;
 
         if (!state.userName) {
             userNameError = 'Name is required';
@@ -81,8 +82,8 @@ function Registration(props) {
             mandalError = 'Mandal is required';
         }
 
-        if (!state.district) {
-            districtError = 'District is required';
+        if (!state.State) {
+            StateError = 'State is required';
         }
         if (!state.email) {
             emailError = 'Email is required';
@@ -101,8 +102,8 @@ function Registration(props) {
             phoneNumberError = "Invalid phone Number";
         }
 
-        if (userNameError || nwNameError || villageError || mandalError || districtError || emailError || phoneNumberError) {
-            setState({ ...state, userNameError, nwNameError, villageError, mandalError, districtError, emailError, phoneNumberError });
+        if (userNameError || nwNameError || villageError || mandalError || StateError || emailError || phoneNumberError) {
+            setState({ ...state, userNameError, nwNameError, villageError, mandalError, StateError, emailError, phoneNumberError });
             return false;
         }
         return true;
@@ -115,7 +116,11 @@ function Registration(props) {
     const handlesubmit = () => {
         const isValid = validate();
         if (isValid) {
-            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO" };
+            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO",createdDate: new Date().toLocaleDateString("en", {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit"
+              }) };
 
             appendSpreadsheet(newRow);
             addToast("User Registred sucessfully",
@@ -225,7 +230,7 @@ function Registration(props) {
                               value={state.district}
                               onChange={(event) =>
                                   event.target.value ?
-                                      setState({ ...state, district: event.target.value, districtError: "" }) : setState({ ...state, district: event.target.value, districtError: "District is required" })
+                                      setState({ ...state, district: event.target.value}) : setState({ ...state, district: event.target.value })
                               }
 
                         >
@@ -259,10 +264,30 @@ function Registration(props) {
                         </Input>
                     
                     </FormGroup>
-                    {state.districtError ? <div className="validation-error" >
-                        {state.districtError}
-                    </div> : ""}
+                
                 </div>
+                <div className="group">
+
+<FormGroup>
+    <Input  className="selectd" type="select" name="select"
+          value={state.State}
+          onChange={(event) =>
+              event.target.value ?
+                  setState({ ...state, State: event.target.value, StateError: "" }) : setState({ ...state, State: event.target.value, StateError: "State is required" })
+          }
+
+    >
+        <option value="" >SELECT STATE</option>
+        <option value="AndhraPradesh">AndhraPradesh</option>
+        <option value="Telagana">Telagana</option>
+    
+    </Input>
+
+</FormGroup>
+{state.StateError ? <div className="validation-error" >
+    {state.StateError}
+</div> : ""}
+</div>
                 <div className="group">
 
                     <FormGroup>
