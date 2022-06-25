@@ -116,7 +116,7 @@ function Registration(props) {
     const handlesubmit = () => {
         const isValid = validate();
         if (isValid) {
-            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO",createdDate: new Date().toLocaleDateString("en", {
+            const newRow = { username: state.userName, networkname: state.nwName, village: state.village, mandal: state.mandal, district: state.district,state:state.State, email: state.email, phonenumber: state.phoneNumber, mgo: state.mgo == true ? "YES" : "NO", lco: state.lco == true ? "YES" : "NO", otherspecify: state.ospecify, techncianEmployTrade: state.technician == true ? "YES" : "NO", cabletvServices: state.cs == true ? "YES" : "NO", internetServices: state.is == true ? "YES" : "NO", bothCableAndInternetServices: state.bothcsis == true ? "YES" : "NO", Others: state.others == true ? "YES" : "NO",createdDate: new Date().toLocaleDateString("en", {
                 year: "numeric",
                 month: "2-digit",
                 day: "2-digit"
